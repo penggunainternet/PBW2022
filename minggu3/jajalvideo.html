@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multimedia - HTML 5</title>
+        </head>
+        <body>
+            <h1 align="center">MEME  </h1>
+
+            <center>
+			<video  width="480" id="myVideo" >
+                <source type="video/mp4" src="media/cowok kalo sendirian di rumah.mp4">
+            </video> <center>
+
+            <p>
+            <button onclick ="playVid()" type="button">Play</button>
+            <button onclick ="pauseVid()" type="button">Pause </button>
+            <button onclick ="durationVid()" type="button">Duration</button>
+            <button onclick ="controlsOn()" type="button">controls On</button>
+            <button onclick ="controlsOff()" type="button">Controls Off</button>
+            <button onclick ="loopOn()" type="button">loop ON</button>
+            <button onclick ="controlsOff()" type="button">loop Off</button>
+            </p>
+            
+            </body>
+            <script>
+                var vid = document.getElementById("myVideo");
+
+                function playVid() {
+                    vid.play();
+                }
+
+                function pauseVid() {
+                    vid.pause();
+                }
+
+                function durationVid() {
+                    alert(vid.duration);
+                }
+
+                function controlsOn() {
+                    vid.controls = true;
+                    vid.load ();
+                }
+
+                function controlsOff() {
+                    vid.controls = false;
+                    vid.load ();
+                }
+				
+				function
+
+                function loopOn() {
+                    vid.loop = true;
+                    vid.load();
+                }
+                
+                function loopOff() {
+                    vid.loop = false
+                    vid.load();
+                }
+            
+            
+            </script>
+			<iframe width="663" height="373" src="https://www.youtube.com/embed/fitOpYHn_kY" title="Cowok kalo Sendirian di Rumah... (Azel Meme)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keyword" content="UDINUS, ahmad bintang saputra, website UDINUS ">
+        <meta name="author" content="Ahmad bintang Saputra">
+        <meta name="description" content="website ahmad bintang saputra">
+        <title>About me</title>
+        <style>
+            nav{
+            height: 5mm;
+            background-color: #6d9197;
+            padding: 1cm;
+            font-size: 20px;
+            width: 100%;
+            position: fixed;
+            }
+            body {
+              background-color: #c4cdc1;
+             font-family: Arial, Helvetica, sans-serif;
+             
+            }
+            article{
+                text-align: center;
+                height: 800px;
+            } 
+            a{
+                text-decoration: none;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <nav id="nav" style="text-decoration: none;" >
+            <a href="home.html">Home </a> |
+            <a href="D:\tugas pbw\minggu6\websiteku\src\cv.pdf">Download CV</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="aboutme.html">About me</a> |
+            <a href="Socmed.html">Find me</a>
+        </nav>
+        <br><br><br><br><br>
+        <article>
+            <h1>Tentang Saya </h1>
+            <p>
+               Hi,saya mahasiswa UDINUS jurusan teknik informatika.
+               kenapa saya memilihh teknik informatika? nggak tau, saya juga bingung.
+               
+            </p>
+            <div>
+                <video loop width="420" id=myVideo>
+                    <source src="src/km_20221019_480p_30f_20221019_154702.mp4" type="video/mp4" >
+                </video>
+
+            </div>
+            <div>
+                <button onclick="playVid()" type="button">Play </button>
+                <button onclick="pauseVid()" type="button">Pause </button>
+                <button onclick="durationVid()" type="button">Durasi</button>
+                <button onclick="enableControls()" type="button">Enable Controls</button>
+                <button onclick="disabledControls()" type="button">Disable Controls</button>
+            
+
+            </div>
+        </article>
+        <footer style="text-align: center;">
+            <p>  Copyright &copy; 2022 ahmad Bintang Saputra  </p>
+        </footer>
+        <script>
+            var vid = document.getElementById("myVideo");
+
+            function playVid() {
+                vid.play();
+                vid.loop();
+            }
+
+            function pauseVid() {
+                vid.pause();
+            }
+
+            function durationVid() {
+                alert(vid.duration);
+            }
+
+            function enableControls() {
+                vid.controls = true;
+            }
+
+            function disabledControls() {
+                vid.controls = false;
+            } 
+    </script>
+    </body>
+     
+</html>

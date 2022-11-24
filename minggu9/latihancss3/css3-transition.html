@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: #35a9db;
+        font-family: roboto;
+        text-align: center;
+      }
+
+      h1 {
+        color: #fff;
+      }
+
+      div {
+        margin: 10px;
+      }
+
+      .kotak {
+        background: #fff;
+        width: 100px;
+        height: 100px;
+        transition: width 1s;
+        -webkit-transition: width 1s;
+      }
+
+      .kotak:hover {
+        width: 300px;
+      }
+
+      .kotak2 {
+        background: #fff;
+        width: 100px;
+        height: 100px;
+        transition: width 1s, height 2s;
+        -webkit-transition: width 1s, height 2s;
+      }
+
+      .kotak2:hover {
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tutorial CSS3 Transition</h1>
+    <div class="kotak">ini kotak</div>
+    <div class="kotak2">ini kotak 2</div>
+  </body>
+</html>
